@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'Recoleta';
+  src: local('Recoleta'), url("./fonts/Recoleta-RegularDEMO.otf")
+  format('opentype');
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: local("Grotesk"), url("./fonts/Grotesk/VastagoGrotesk-Light.otf") format("opentype");
+}
+
+body {
+  font-family: Recoleta;
+}
+.font-title {
+  font-family: Grotesk;
+}
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

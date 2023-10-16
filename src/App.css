@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+.font-face-gm {
+  font-family: "Recoleta";
+}
+
+.font-face-gl {
+  font-family: "Grotesk";
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

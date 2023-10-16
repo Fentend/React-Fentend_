@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import './fonts/Recoleta-RegularDEMO.otf';
+import './fonts/Grotesk/VastagoGrotesk-Light.otf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
