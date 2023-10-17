@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Contact3 from "../Assets/Contact3.jpeg";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { BsTelephoneForwardFill } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import "./Contact.css";
 import Footer from "./Footer";
 // import Popup from "./Popup";

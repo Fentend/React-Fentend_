@@ -5,6 +5,8 @@ import Home from "./Component/Home";
 import About from "./Component/About";
 import Contact from './Component/Contact';
 import Service from './Component/Service';
+import "react-loading-skeleton/dist/skeleton.css";
+
 // import Popup from './Component/Popup';
 
 

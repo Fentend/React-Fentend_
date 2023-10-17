@@ -14,7 +14,7 @@ const About = () => {
         <p className="text-white text-3xl font-bold">About Us</p>
       </div>
       <div className="text-center md:w-full px-3">
-        <p className="font-title md:text-left text-left md:pt-16 pt-10 md:pb-5 md:px-64 m-1">
+          <p className="font-title md:text-left text-left md:pt-16 pt-10 md:pb-5 md:px-64 m-1">
           Welcome to Fentend Web Solutions, where innovation meets security! We
           are a cutting-edge tech company dedicated to providing comprehensive
           website development services while ensuring the utmost protection of

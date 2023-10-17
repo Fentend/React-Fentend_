@@ -1,33 +1,51 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Fentend, Main, CEO, COE, Business, Service } from "../Assets";
 import { FaLaptop, FaMobileAlt, FaInternetExplorer } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
 import raphaelProfile from "../Assets/1694583209215.jpg";
+import Skeleton from "react-loading-skeleton";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+  const [title, setTitle] = useState("");
+
   useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+      setTitle("Take your business to the next level");
+    }, 8000);
+
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="text-center md:mt-12 md:pt-24">
+    <div className="text-center md:mt-8 md:pt-10">
       {/* YOUR BUSINESS SECTION */}
+
       <div className="flex md:flex-row flex-col p-5">
         <div className="md:w-1/2" data-aos="fade-right">
           <h1 className="font-semibold text-indigo-500 md:text-4xl text-3xl text-left pt-3 md:font-semibold md:my-5">
-            Take your business to the next level
+            {title || <Skeleton className="h-14 md:h-10"/>}
           </h1>
-          <p className="font-title md:text-xl text-sm my-5 md:mx-3 text-left">
-            we provide innovative IT solutions to clients from various
-            industries including banking, finance, insurance etc. We strive to
-            deliver cost-effective and adaptive technology solutions that enable
-            our clients to meet their business objectives and goals, and gain a
-            greater return on their investment.
-          </p>
+          {loading ? (
+            <Skeleton className="h-24 md:h-44 mt-4 mb-8"  />
+          ) : (
+            <p className="font-title md:text-xl text-sm my-5 md:mx-3 text-left">
+              we provide innovative IT solutions to clients from various
+              industries including banking, finance, insurance etc. We strive to
+              deliver cost-effective and adaptive technology solutions that
+              enable our clients to meet their business objectives and goals,
+              and gain a greater return on their investment.
+            </p>
+          )}
         </div>
         <div className="md:w-1/2 md:mx-5" data-aos="fade-left">
-          <img src={Main} alt="" className="w-full h-full rounded-md" />
+          {loading ? (
+            <Skeleton className="h-96" />
+          ) : (
+            <img src={Main} alt="" className="w-full h-full rounded-md" />
+          )}
         </div>
       </div>
 
@@ -52,6 +70,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+
       {/* WHAT WE DO SECTION */}
       <h1
         className="text-2xl font-black capitalize underline font-title text-indigo-500"
@@ -92,7 +111,9 @@ const Home = () => {
             <p className="pb-5 flex items-center justify-center text-indigo-100 font-title md:text-lg mx-2">
               We develop Mobile Application for company to manage and run their
               business across the globe. Mobile App that can run on different
-              platform such as Android,IOS, etc.
+              platform such as Android & IOS and can be used by businesses of
+              any sizes, from small businesses to large enterprises. Mobile
+              application can help improve efficiency and also automate tasks
             </p>
           </div>
         </div>
@@ -107,7 +128,6 @@ const Home = () => {
               Social Media Development
             </h2>
             <p className="pb-5 flex items-center justify-center text-indigo-100 font-title md:text-lg mx-2">
-              {" "}
               We analyze social media audiences and develope a strategy that
               tailored to them, creating and distributing content for social
               media profiles, monitoring online conversations, collaborating
@@ -143,24 +163,24 @@ const Home = () => {
         >
           Our team
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:mx-10 mx-5">
-          <div className="max-w-sm w-full lg:max-w-full lg:flex">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:gap-24 mx-10 md:mx-0">
+          <div className="max-w-sm w-full lg:max-w-full lg:flex lg:items-end lg:justify-end">
             <div
-              className="h-72 lg:h-auto lg:w-48 bg-bottom flex-none bg-cover bg-no-repeat rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+              className="h-72 lg:w-64 bg-bottom flex-none bg-cover bg-no-repeat rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
               style={{ backgroundImage: `url(${raphaelProfile})` }}
             >
-              <h3 className="font-semibold font-title capitalize text-indigo-500 text-md relative top-60 right-[4.2rem]">
+              <h3 className="font-semibold font-title capitalize text-indigo-500 text-md relative top-60 right-[3rem]">
                 Raphael Ogumba
               </h3>
-              <h3 className="text-white capitalize text-sm relative top-[15rem] right-9">
+              <h3 className="text-white capitalize text-sm relative top-[15rem] right-6">
                 UX/UI Designer & Frontend Dev
               </h3>
             </div>
           </div>
 
-          <div className="max-w-sm w-full lg:max-w-full lg:flex">
+          <div className="max-w-sm w-full lg:max-w-full lg:flex ">
             <div
-              className="h-72 lg:h-auto lg:w-48 flex-none bg-bottom bg-no-repeat font-title font-semibold bg-cover rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+              className="h-72 lg:w-64 flex-none bg-bottom bg-no-repeat font-title font-semibold bg-cover rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
               style={{ backgroundImage: `url(${CEO})` }}
             >
               <h3 className="font-semibold font-title capitalize text-indigo-500 text-md relative top-60 right-[4.2rem]">
