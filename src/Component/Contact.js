@@ -1,14 +1,12 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { useNavigate } from 'react-router-dom';
-// import { toast, ToastContainer } from "react-toastify";
 import Contact3 from "../Assets/Contact3.jpeg";
 import { MdLocationOn, MdEmail } from "react-icons/md";
 import { BsTelephoneForwardFill } from "react-icons/bs";
-// import { Link } from 'react-router-dom';
 import "./Contact.css";
 import Footer from "./Footer";
-// import Popup from "./Popup";
+
 
 const Contact = () => {
   const [isRotating, setIsRotating] = useState(false);
@@ -49,11 +47,9 @@ const Contact = () => {
       navigate('/');
     }
   };
-  // const [ShowPopup, setShowPopup] = useState(false);
-  // const handleOnClose = () => setShowPopup(false);
 
   return (
-    <div className="mt-10">
+    <div className="font-paragraph mt-10">
       <div className="bg-gray-200 md:flex md:flex-row md:mx-10">
         <img
           src={Contact3}
@@ -97,7 +93,7 @@ const Contact = () => {
         <h1 className="text-center text-2xl py-6 text-indigo-500">Send Us A Message</h1>
         <div className="flex md:flex-row flex-col items-center justify-center gap-4">
           <div className="md:w-1/2">
-          <p className="md:text-xl text-base text-center p-2 md:p-5 ">
+          <p className="md:text-xl text-base font-paragraph text-center p-2 md:p-5 ">
             Give us a call or drop by anytime, we endeavour to answer all
             enquiries within 24 hours on business days.
           </p>

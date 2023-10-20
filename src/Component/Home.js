@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { Fentend, Main, CEO, COE, Business, Service } from "../Assets";
+import { Main, CEO, Business, Service, coporateSite, ecommerceSite, churchSite } from "../Assets";
 import { FaLaptop, FaMobileAlt, FaInternetExplorer } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
 import raphaelProfile from "../Assets/1694583209215.jpg";
+import femiProfile from "../Assets/femi.jpg";
 import Skeleton from "react-loading-skeleton";
+
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -15,7 +17,7 @@ const Home = () => {
     setTimeout(() => {
       setLoading(false);
       setTitle("Take your business to the next level");
-    }, 8000);
+    }, 2000);
 
     Aos.init({ duration: 2000 });
   }, []);
@@ -31,7 +33,7 @@ const Home = () => {
           {loading ? (
             <Skeleton className="h-24 md:h-44 mt-4 mb-8"  />
           ) : (
-            <p className="font-title md:text-xl text-sm my-5 md:mx-3 text-left">
+            <p className="font-paragraph md:text-xl text-base my-5 md:mx-3 text-left">
               we provide innovative IT solutions to clients from various
               industries including banking, finance, insurance etc. We strive to
               deliver cost-effective and adaptive technology solutions that
@@ -62,7 +64,7 @@ const Home = () => {
           <h1 className="text-indigo-500 md:text-3xl text-2xl text-left font-semibold">
             We help you to promote your business
           </h1>
-          <p className="md:text-xl font-title text-left text-sm mt-5 md:mx-3">
+          <p className="md:text-xl font-paragraph text-left text-base mt-5 md:mx-3">
             Managing your business IT department and staying up to date with the
             latest technologies can be a hassle. Outsource your technology to us
             and we’ll take care of your infrastructure, so you can say goodbye
@@ -88,7 +90,7 @@ const Home = () => {
             <h2 className="md:text-3xl text-xl font-title font-semibold text-white my-4">
               Web Development
             </h2>
-            <p className="pb-5 flex items-center justify-center text-indigo-100 font-title md:text-lg mx-2">
+            <p className="pb-5 flex items-center justify-center text-indigo-100 font-paragraph md:text-lg mx-2">
               We develop web app and desktop app for companies and Individuals
               across the globe to manage their businesses Fentend market tech
               strive to breathe life into your ideas by developing software
@@ -108,7 +110,7 @@ const Home = () => {
             <h2 className="md:text-3xl text-xl font-title font-semibold text-white my-4">
               App Development
             </h2>
-            <p className="pb-5 flex items-center justify-center text-indigo-100 font-title md:text-lg mx-2">
+            <p className="pb-5 flex items-center justify-center text-indigo-100 font-paragraph md:text-lg mx-2">
               We develop Mobile Application for company to manage and run their
               business across the globe. Mobile App that can run on different
               platform such as Android & IOS and can be used by businesses of
@@ -127,7 +129,7 @@ const Home = () => {
             <h2 className="md:text-3xl text-xl font-title font-semibold text-white my-4">
               Social Media Development
             </h2>
-            <p className="pb-5 flex items-center justify-center text-indigo-100 font-title md:text-lg mx-2">
+            <p className="pb-5 flex items-center justify-center text-indigo-100 font-paragraph md:text-lg mx-2">
               We analyze social media audiences and develope a strategy that
               tailored to them, creating and distributing content for social
               media profiles, monitoring online conversations, collaborating
@@ -147,13 +149,67 @@ const Home = () => {
           <h2 className="md:text-3xl text-2xl text-indigo-500 font-black pt-4 font-title underline mt-5">
             Our Services
           </h2>
-          <p className="md:text-xl text-sm font-title text-left my-5 mx-3">
+          <p className="md:text-xl text-sm font-paragraph text-left my-5 mx-3">
             Our highly skilled development teams specialized in Java, PHP,
             React, Angular and AWS help you accelarate your business via modern
             custom software solutions.
           </p>
         </div>
       </div>
+
+            {/* OUR WORk */}
+
+      <div className="mx-auto my-10 p-3">
+              <h2 className="text-3xl text-indigo-500 py-6 font-semibold">Our Work</h2>
+              <p className="md:text-xl text-sm font-paragraph pb-8 mx-3">Unique and resolved optimal solutions</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+ <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src={coporateSite} alt="" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Corporate Website</h5>
+        <p class="mb-3 font-paragraph text-gray-700 dark:text-gray-400">We design corporate business websites such as Finance, Marketing and Investment, company websites with features such as Book an Appointment, Request A Quote, News and Career.</p>
+        <a href="/Contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Contact Us
+             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+ <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src={ecommerceSite} alt="" />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ecommerce Websites</h5>
+        <p class="mb-3 font-paragraph text-gray-700 dark:text-gray-400">We offer you effective eCommerce solutions such as sales-driven designs, easy to use and secure payment gateways, unique checkout system, price based by country, wishlist, product variation and mobile responsive layouts.</p>
+        <a href="/Contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            Contact Us
+             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+ <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg" src={churchSite} />
+    <div class="p-5">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Church Websites</h5>
+        <p class="mb-3 font-paragraph text-gray-700 dark:text-gray-400">We design and develop Church websites with great features such as Online offering and Tithes, Live Stream Integration, Online messages store and Upcoming Events system.</p>
+        <a href="/Contact" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        Contact Us
+             <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+
+              </div>
+            </div>
 
       {/* OUR TEAM SECTION */}
       <div className="bg-indigo-100 pb-20 ">
@@ -180,17 +236,22 @@ const Home = () => {
 
           <div className="max-w-sm w-full lg:max-w-full lg:flex ">
             <div
-              className="h-72 lg:w-64 flex-none bg-bottom bg-no-repeat font-title font-semibold bg-cover rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-              style={{ backgroundImage: `url(${CEO})` }}
+              className="h-72 lg:w-64 flex-none bg-top md:bg-top bg-no-repeat font-title font-semibold bg-cover rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+              style={{ backgroundImage: `url(${femiProfile})` }}
             >
               <h3 className="font-semibold font-title capitalize text-indigo-500 text-md relative top-60 right-[4.2rem]">
                 Mr. Obafemi
               </h3>
-              <h3 className="text-[#ffffff] capitalize text-sm relative top-[15rem] right-3">
+              <h3 className="text-[#ffffff] capitalize text-sm relative top-[15rem]">
                 CEO Fentend & Business strategist
               </h3>
             </div>
           </div>
+
+          {/* OUR WORK */}
+
+            
+
         </div>
       </div>
       <Footer />

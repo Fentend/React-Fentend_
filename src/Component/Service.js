@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import Contact3 from "../Assets/Contact3.jpeg";
 import Footer from './Footer';
 import { Service1 } from '../Assets';
-// import { Link } from 'react-router-dom';
 import Skeleton from "react-loading-skeleton";
 
  const Service = () => {
@@ -13,7 +11,7 @@ import Skeleton from "react-loading-skeleton";
     setTimeout(() => {
       setLoading(false);
       setName("Ecommerce");
-    }, 8000);
+    }, 2000);
   });
 
   return (
@@ -35,7 +33,7 @@ import Skeleton from "react-loading-skeleton";
           {loading ? (
             <Skeleton className="h-32 md:h-12"/>
           ) : (
-          <p className='font-title mb-3'>
+          <p className='font-paragraph mb-3'>
           We design websites with beautiful user interface, engaging to first time or returning customers, highly secure, easy to use CMS, responsive (i.e ability to view the website with ease on all your devices) and very fast to load websites which turn your website visitors into customers.
           </p>
           )}
@@ -45,7 +43,7 @@ import Skeleton from "react-loading-skeleton";
           {loading ? (
             <Skeleton className="h-32 md:h-12"/>
           ) : (
-          <p className='font-title mb-3'>
+          <p className='font-paragraph mb-3'>
           we design websites with beautiful user interface, engaging to first time or returning customers, highly secure, easy to use CMS, responsive (i.e ability to view the website with ease on all your devices) and very fast to load websites which turn your website visitors into customers.
           </p>
           )}
@@ -60,7 +58,7 @@ import Skeleton from "react-loading-skeleton";
           {loading ? (
             <Skeleton className="h-32 md:h-12"/>
           ) : (
-          <p className='font-title mb-3'>
+          <p className='font-paragraph mb-3'>
           UI is how a user interacts with our website while User Experience is how the user feel when using your app or website. We create user-oriented UI/UX for your app or website
           </p>
           )}
@@ -74,7 +72,7 @@ import Skeleton from "react-loading-skeleton";
           {loading ? (
             <Skeleton className="h-32 md:h-12"/>
           ) : (
-          <p className='font-title mb-3'>
+          <p className='font-paragraph mb-3'>
           We will conduct a thorough investigation to find out everything there is to know about your target audience and how we can utilize your website’s content to drive traffic and turn your visitors into paying customers. By listening to you and determining your business needs, we will put together a successful plan that will help you accomplish your goals and change the way you do business online.
           </p>
           )}

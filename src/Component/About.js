@@ -14,7 +14,7 @@ const About = () => {
         <p className="text-white text-3xl font-bold">About Us</p>
       </div>
       <div className="text-center md:w-full px-3">
-          <p className="font-title md:text-left text-left md:pt-16 pt-10 md:pb-5 md:px-64 m-1">
+          <p className="font-paragraph  md:text-left text-left md:pt-16 pt-10 md:pb-5 md:px-64 m-1">
           Welcome to Fentend Web Solutions, where innovation meets security! We
           are a cutting-edge tech company dedicated to providing comprehensive
           website development services while ensuring the utmost protection of
@@ -29,7 +29,7 @@ const About = () => {
           to web development and data protection, you can rest assured that your
           online presence is in safe hands.
         </p>
-        <p className="font-title md:text-left md:pb-16 md:px-64 text-left py-5 m-2">
+        <p className="font-paragraph md:text-left md:pb-16 md:px-64 text-left py-5 m-2">
           Fentend Web Solutions is your go-to partner for seamless website
           development and uncompromising data protection. Our team of skilled
           designers, developers, and cybersecurity experts collaborates to build
@@ -62,7 +62,7 @@ const About = () => {
             className="bg-indigo-500 h-1 md:mb-5 mb-5 mx-32"
             data-aos="slide-right"
           />
-          <p className="font-title">
+          <p className="font-paragraph">
             At Fentend Web Solutions, our vision is to be the industry leader in
             web development and data protection, driving digital innovation
             while setting the gold standard for safeguarding our clients'
@@ -76,7 +76,7 @@ const About = () => {
             className="bg-indigo-500 h-1 md:mb-5 mb-5 mx-32"
             data-aos="slide-right"
           />
-          <p className="font-title">
+          <p className="font-paragraph ">
             Our mission is to empower businesses of all sizes with dynamic,
             secure, and innovative websites that amplify their online presence.
             We are committed to providing cutting-edge technology, unparalleled
@@ -90,7 +90,7 @@ const About = () => {
         <div>
           <h1 className="text-center text-3xl pb-5 font-semibold">Goals</h1>
 
-          <div className="font-title flex flex-col gap-4">
+          <div className="font-paragraph flex flex-col gap-4">
             <div className="flex items-center justify-center gap-4">
               <p className="text-indigo-500">
                 <AiFillCheckCircle />
