@@ -10,6 +10,7 @@ import smileyEmoji from "./emojipng.com-12765895.png";
 import coporateSite from "../Assets/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
 import ecommerceSite from "../Assets/e-commerce.jpg";
 import churchSite from "../Assets/church website.webp";
+import OurServices from "../Assets/image001.png";
 
 
-export { Fentend, Main, CEO, COE, Service, Business, Contact3, Service1, smileyEmoji, coporateSite, ecommerceSite, churchSite };
+export { Fentend, Main, CEO, COE, Service, Business, Contact3, Service1, smileyEmoji, coporateSite, ecommerceSite, churchSite, OurServices };
