@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Main, CEO, Business, Service, coporateSite, ecommerceSite, churchSite, OurServices } from "../Assets";
+import { Main, CEO, Business, Service, coporateSite, ecommerceSite, churchSite, OurServices, profile } from "../Assets";
 import { FaLaptop, FaMobileAlt, FaInternetExplorer } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Footer from "./Footer";
-import raphaelProfile from "../Assets/1694583209215.jpg";
+// import raphaelProfile from "../Assets/profileRaphael";
 import femiProfile from "../Assets/femi.jpg";
 import { BounceLoader } from "react-spinners";
 // import Skeleton from "react-loading-skeleton";
@@ -18,7 +18,7 @@ const Home = () => {
     setTimeout(() => {
 
       setLoading(false)
-    }, 100)
+    }, 8000)
 
 
     Aos.init({ duration: 2000 });
@@ -220,10 +220,10 @@ const Home = () => {
             </div>
 
             {/* OUR SERVICES */}
-            <div className="grid grid-cols-2 gap-6 p-3">
-              <div className="my-auto text-left">
-                <p className="font-paragraph text-xl text-left mx-10">At Fentend, we provide top notch web and mobile development services that helps companies attained greater heights and improve their productivity by 100 percent</p>
-                <a href="https://fendteck.vercel.app/" class="inline-flex items-center ml-10 px-3 py-2 mt-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-3">
+              <div className="my-auto mx-auto md:text-left">
+                <p className="font-paragraph md:text-xl md:text-left text-center mx-10">At Fentend, we provide top notch web and mobile development services that helps companies attained greater heights and improve their productivity by 100 percent</p>
+                <a href="https://fendteck.vercel.app/" class="inline-flex items-center md:ml-10 px-3 py-2 mt-5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   View Work
              <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -246,8 +246,8 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:gap-24 mx-10 md:mx-0">
           <div className="max-w-sm w-full lg:max-w-full lg:flex lg:items-end lg:justify-end">
             <div
-              className="h-72 lg:w-64 bg-bottom flex-none bg-cover bg-no-repeat rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
-              style={{ backgroundImage: `url(${raphaelProfile})` }}
+              className="h-72 lg:w-64 flex-none bg-cover bg-no-repeat rounded-md lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+              style={{ backgroundImage: `url(${profile})` }}
               >
               <h3 className="font-semibold font-title capitalize text-indigo-500 text-md relative top-60 right-[3rem]">
                 Raphael Ogumba
