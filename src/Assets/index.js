@@ -11,6 +11,6 @@ import coporateSite from "../Assets/adeolu-eletu-E7RLgUjjazc-unsplash.jpg";
 import ecommerceSite from "../Assets/e-commerce.jpg";
 import churchSite from "../Assets/church website.webp";
 import OurServices from "../Assets/image001.png";
-import profile from "../Assets/Flamingo.jpg";
+import profile from "../Assets/IMG_0364.jpg";
 
 export { Fentend, Main, CEO, COE, Service, profile, Business, Contact3, Service1, smileyEmoji, coporateSite, ecommerceSite, churchSite, OurServices };
