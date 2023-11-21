@@ -78,6 +78,8 @@ const Contact = () => {
         
         <div className="flex flex-col items-center justify-center text-2xl pb-2">
           <MdEmail className="text-center text-indigo-500 text-2xl md:mx-40 mx-32 my-2" />
+          <p className="text-sm md:text-lg md:mx-10">Email: Info@fentend.com</p>
+          <p className="text-sm md:text-lg md:mx-10">Email: Team@fentend.com</p>
           <p className="text-sm md:text-lg md:mx-10">Email: Fentendmarkettech@gmail.com</p>
         </div>
 
